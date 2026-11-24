@@ -655,7 +655,8 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
 .card-ed{width:clamp(19rem,31vw,27rem);flex:0 0 auto;gap:.9rem;min-height:0}
 .card-ed img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:3px;background:#F6F8FC}
 .card-title{font-size:22px;line-height:1.2}.card-sum{font-size:15px;line-height:1.55}.card-skills{font-size:13px}
-.evidence-exhibit{width:clamp(21rem,32vw,28rem);flex:0 0 auto;display:flex;flex-direction:column;gap:.8rem}
+.evidence-exhibit{width:clamp(21rem,32vw,28rem);flex:0 0 auto;display:flex;flex-direction:column;gap:.8rem;cursor:pointer}
+.evidence-exhibit:focus-visible{outline:2px solid #1F4FA3;outline-offset:5px}
 .evidence-exhibit h3{font-size:clamp(1.6rem,2.5vw,2rem);line-height:1.2;margin:0 0 .45rem}
 .evidence-exhibit p:not(.sc-kicker){font-size:15px;line-height:1.55;color:#4B535D;margin:0;max-width:40ch}
 .evidence-switch{display:flex;gap:1.1rem;border-bottom:1px solid #D8DEE6}
@@ -668,6 +669,41 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
 .evidence-project-link{align-self:flex-start}
 .rail-close{width:clamp(17rem,24vw,21rem);flex:0 0 auto}
 .rail-close>p:nth-child(2){font-family:'Source Serif 4',Georgia,serif;font-size:1.45rem!important;line-height:1.35!important;color:#2B2D31!important}
+/* ── Home project rail: deep-navy band, white editorial cards (project-page style) ── */
+.project-rail-stage{background-color:#0F2347;background-image:linear-gradient(rgba(142,195,230,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(142,195,230,.07) 1px,transparent 1px);background-size:48px 48px;box-shadow:inset 0 4px 0 #1F4FA3,inset 0 -4px 0 #1F4FA3}
+.project-rail-stage .rail-intro .sc-kicker,.project-rail-stage .rail-close .sc-kicker{color:#8EC3E6}
+.project-rail-stage .rail-intro h2{color:#fff}
+.project-rail-stage .rail-intro p:not(.sc-kicker),.project-rail-stage .rail-close p:not(.sc-kicker){color:#C7D2E4}
+.project-rail-stage .rail-close>p:nth-child(2){color:#fff!important}
+.project-rail-stage .rail-intro .sc-text-link{color:#8EC3E6;text-decoration-color:rgba(142,195,230,.45)}
+.project-rail-stage .rail-intro .sc-text-link:hover{text-decoration-color:#8EC3E6}
+.project-rail-stage .rail-close .sc-primary{background:#fff;color:#1F4FA3}
+.project-rail-stage .rail-close .sc-primary:hover{background:#E4E7EC}
+#projectsTrack .card-ed,#allView .card-ed,.evidence-exhibit{background:#fff;color:#2B2D31;border-radius:4px;padding:1.5rem 1.5rem 1.65rem;box-shadow:0 22px 44px -22px rgba(0,0,0,.6)}
+#projectsTrack .card-ed{width:clamp(26rem,min(43vw,70svh),37.7rem);gap:1rem;transition:transform .25s ease-out,box-shadow .25s ease-out}
+#projectsTrack .card-ed:hover,#allView .card-ed:hover{transform:translateY(-4px);box-shadow:0 30px 52px -22px rgba(0,0,0,.7)}
+#projectsTrack .card-ed,#allView .card-ed,.evidence-exhibit{align-self:stretch}
+#projectsTrack .card-ed>img,#allView .card-ed>img{aspect-ratio:3/2;border-radius:2px;background:#F6F8FC}
+#projectsTrack .card-ed>img{aspect-ratio:2/1}
+#projectsTrack .card-ed .card-body,#allView .card-ed .card-body{display:flex;flex-direction:column;flex:1}
+#projectsTrack .card-no,#allView .card-no{display:block;font-size:13px;letter-spacing:.09em;color:#1F4FA3;font-weight:500;margin-bottom:.35rem}
+#projectsTrack .card-ed .eyebrow-s,#allView .card-ed .eyebrow-s{color:#1F4FA3;font-weight:500;letter-spacing:.09em}
+#projectsTrack .card-ed .card-period,#allView .card-ed .card-period{margin-top:2px;color:#6D727A}
+#projectsTrack .card-ed .card-title,#allView .card-ed .card-title{font-size:28px;font-weight:700;line-height:1.15;margin-top:.5rem}
+#projectsTrack .card-ed .card-sum,#allView .card-ed .card-sum{font-size:16px;line-height:1.55;color:#3A3D44;margin-top:.55rem;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+#projectsTrack .card-meta,#allView .card-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:.9rem;padding-left:.8rem;border-left:2px solid #1F4FA3}
+#projectsTrack .card-meta span,#allView .card-meta span{display:block;font-size:12px;color:#6D727A;line-height:1.3}
+#projectsTrack .card-meta b,#allView .card-meta b{display:block;font-weight:400;font-size:17px;color:#2B2D31;line-height:1.25;margin-top:1px}
+#projectsTrack .card-ed .card-more,#allView .card-ed .card-more{margin-top:auto;padding-top:.9rem;color:#1F4FA3;font-weight:500}
+.evidence-exhibit{width:clamp(26rem,min(43vw,70svh),37.7rem);gap:.85rem}
+.evidence-exhibit h3{font-size:clamp(1.7rem,2.6vw,2.15rem)}
+.evidence-exhibit .evidence-panel{min-height:240px}
+.evidence-exhibit .evidence-panel img,.evidence-exhibit .evidence-panel video,.evidence-exhibit .evidence-panel svg{max-height:290px}
+.evidence-exhibit p:not(.sc-kicker){font-size:16px}
+.evidence-exhibit .sc-kicker{margin-bottom:.35rem}
+.evidence-exhibit h3{font-weight:700}
+@media(min-width:761px) and (max-height:800px){#projectsTrack .card-ed>img{aspect-ratio:2/1}#projectsTrack .card-ed,.evidence-exhibit{padding:1.2rem 1.2rem 1.35rem}#projectsTrack .card-ed .card-title{font-size:25px}#projectsTrack .card-ed .card-sum{font-size:15px;-webkit-line-clamp:3}.evidence-exhibit .evidence-panel{min-height:190px}.evidence-exhibit .evidence-panel img,.evidence-exhibit .evidence-panel video,.evidence-exhibit .evidence-panel svg{max-height:210px}}
+@media(max-width:760px){#projectsTrack .card-ed{width:78vw;max-width:340px}.evidence-exhibit{width:82vw;max-width:360px}}
 .sc-background{background:#F6F8FC}
 #timeline>.fade{width:min(calc(100% - 3rem),1120px);padding:clamp(4rem,8vw,7rem) 0;margin-inline:auto}
 #timeline .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem)}
@@ -683,13 +719,16 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
 .sc-contact .contact-link{display:flex;align-items:center;gap:.65rem;text-decoration:none}
 .sc-contact .contact-link{font-size:16px;white-space:nowrap}
 .sc-contact .contact-link svg{width:20px!important;height:20px!important;color:#1F4FA3}
-#allView #aGrid{display:grid;grid-template-columns:1fr;gap:1.25rem}
-#allView .card-ed.card-row{display:grid;grid-template-columns:minmax(220px,32%) minmax(0,1fr);align-items:stretch;gap:0;width:100%;min-height:0;padding:0;border:1px solid #D8DEE6;border-radius:5px;overflow:hidden;background:#fff;color:#2B2D31}
-#allView .card-ed.card-row:hover{background:#F8FAFC}
-#allView .card-ed.card-row>img{display:block;width:100%;height:100%;min-height:230px;max-height:300px;aspect-ratio:auto;object-fit:cover;border-radius:0}
-#allView .card-ed .card-body{display:block;align-self:center;padding:clamp(1.1rem,2.5vw,2rem)}
-#allView .card-ed .card-more{margin-top:16px}
-@media(max-width:680px){#allView .card-ed.card-row{grid-template-columns:1fr}#allView .card-ed.card-row>img{height:auto;min-height:0;max-height:none;aspect-ratio:16/9}}
+#allView{background-color:#0F2347;background-image:linear-gradient(rgba(142,195,230,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(142,195,230,.07) 1px,transparent 1px);background-size:48px 48px;border-top:0;box-shadow:inset 0 4px 0 #1F4FA3}
+#allView .ed-h2{color:#fff}
+#allView a[href="#projects"]{color:#8EC3E6}#allView a[href="#projects"]:hover{color:#fff}
+#allView #aFilters button{background:transparent;border-color:rgba(142,195,230,.5);color:#E4E7EC}
+#allView #aFilters button:hover{border-color:#8EC3E6}
+#allView #aFilters button[aria-pressed="true"]{background:#fff;border-color:#fff;color:#1F4FA3;font-weight:500}
+#allView #aGrid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+#allView .card-ed{width:100%;display:grid;grid-template-columns:minmax(240px,38%) minmax(0,1fr);gap:0 clamp(1.25rem,3vw,2.25rem);align-items:center;transition:transform .25s ease-out,box-shadow .25s ease-out}
+#allView .card-ed>img{aspect-ratio:3/2}
+@media(max-width:680px){#allView .card-ed{grid-template-columns:1fr;gap:1rem}}
 @media(max-width:760px){
  .cover-layout{grid-template-columns:1fr;min-height:0;gap:2rem;padding-block:4rem}
  .cover-copy h1{max-width:12ch;font-size:clamp(2.8rem,12vw,4.2rem)}
@@ -850,7 +889,7 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
   </div>
 </section>
 
-<section id="projects" class="sc-section sc-projects" data-sc-act="pan" data-sc-span="2.67" aria-labelledby="projTitle">
+<section id="projects" class="sc-section sc-projects" data-sc-act="pan" data-sc-span="3.2" aria-labelledby="projTitle">
   <div data-sc-stage class="project-rail-stage">
     <div id="projectsTrack" class="project-rail-track" data-sc-pan="0.04">
       <div class="rail-intro">
@@ -860,7 +899,7 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
         <a href="#all-projects" class="sc-text-link">All projects <i data-icon="arrow-right"></i></a>
       </div>
       <div id="grid" class="project-items"></div>
-      <article class="evidence-exhibit" aria-labelledby="evidenceTitle">
+      <article class="evidence-exhibit" aria-labelledby="evidenceTitle" tabindex="0" role="group" aria-label="Hydraulic jump project preview. Press Enter or Space to open the project page; use the controls to change the preview.">
         <div>
           <p class="sc-kicker">Research field note</p>
           <h3 id="evidenceTitle">A hydraulic jump, three views</h3>
@@ -875,7 +914,7 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
           <img src="projects/physics-extended-essay/hydraulic-jump-diagram.png" width="754" height="401" alt="Schematic showing the sluice gate, hydraulic jump, and measured water depths">
           <figcaption>Flume schematic · sluice-gate opening and water depths</figcaption>
         </figure>
-        <button id="evidenceProjectLink" type="button" class="sc-text-link">Open the full essay <i data-icon="arrow-right"></i></button>
+        <a id="evidenceProjectLink" href="#project=physics-extended-essay" class="sc-text-link">View project <i data-icon="arrow-right"></i></a>
       </article>
       <div class="rail-close">
         <p class="sc-kicker">The full collection</p>
@@ -927,7 +966,7 @@ html:not(.sc-ready) [data-sc-in],html:not(.sc-ready) [data-sc-stagger]>*{opacity
 
 <!-- Project modal -->
 <div id="lightbox" class="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><button type="button" id="lbClose">Close</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
-<section id="pOverlay" hidden class="min-h-screen bg-white py-16" aria-labelledby="pTitle">
+<section id="pOverlay" hidden role="dialog" aria-modal="true" class="min-h-screen bg-white py-16" aria-labelledby="pTitle">
   <div id="pDialog" tabindex="-1" class="mx-auto w-full max-w-6xl bg-white p-6 outline-none sm:p-10"></div>
 </section>
 <footer class="border-t border-silver-light py-8 text-center text-sm text-silver">Dylan Chen, Singapore. Mechanical Engineering, UCL 2027.</footer>
@@ -2410,7 +2449,7 @@ const PROJECTS = [
  {
   "slug": "24-7-shift-roster-generator",
   "date": "2026-10-29",
-  "period": "Sept 2026 – Oct 2026",
+  "period": "Sept 2026 – Nov 2026",
   "title": "24/7 Shift Roster Generator",
   "category": "Software & Automation",
   "summary": "A manual, rule-heavy 24/7 roster for 26 people turned into a tool that builds a fair schedule from three input sheets, as an Excel and Python version and a Google Sheets version.",
@@ -2793,10 +2832,11 @@ const TIMELINE = [
  {
   "type": "Experience",
   "date": "February to August 2027 (upcoming)",
-  "title": "Internship",
+  "title": "Program Coordinator Intern",
   "org": "Vivita",
   "points": [
-   "Upcoming internship placement."
+   "Support the Vivita team in running maker and STEAM programmes for students, preparing materials, co-facilitating workshops at Vivistop Kampong Eunos and at schools, and helping with prototyping and 3D printing.",
+   "Work closely with Jasmine and the programme team."
   ]
  },
  {
@@ -3207,12 +3247,17 @@ function filters(box, items, current, onPick, counts) {
 function trap(e, box) {
   if (e.key !== 'Tab') return;
   const f = [...box.querySelectorAll('a[href],button:not([disabled]),input,textarea,[tabindex]:not([tabindex="-1"])')].filter((x) => x.offsetParent !== null);
-  if (!f.length) return;
+  if (!f.length) { e.preventDefault(); box.focus(); return; }
   const a = f[0], z = f[f.length - 1];
-  if (e.shiftKey && document.activeElement === a) { e.preventDefault(); z.focus(); }
-  else if (!e.shiftKey && document.activeElement === z) { e.preventDefault(); a.focus(); }
+  const focusIsInside = f.includes(document.activeElement);
+  if (e.shiftKey && (!focusIsInside || document.activeElement === a)) { e.preventDefault(); z.focus(); }
+  else if (!e.shiftKey && (!focusIsInside || document.activeElement === z)) { e.preventDefault(); a.focus(); }
 }
-function showOverlay(ov, dlg) { ov.hidden = false; dlg.focus(); window.scrollTo(0, 0); }
+function setProjectModalBackground(inert) {
+  document.querySelector('header.sticky')?.toggleAttribute('inert', inert);
+  document.querySelector('footer')?.toggleAttribute('inert', inert);
+}
+function showOverlay(ov, dlg) { ov.hidden = false; setProjectModalBackground(true); dlg.focus(); window.scrollTo(0, 0); }
 function hideOverlay(ov) { ov.hidden = true; }
 
 // ===== Icons: built-in SVGs (no external icon font to load or block) =====
@@ -3275,15 +3320,26 @@ $('#cList').innerHTML = [
 
 // ===== project grid (home = latest few, All projects page = everything + filters) =====
 const byRecent = [...PROJECTS].sort((x, y) => y.date.localeCompare(x.date));
-function cardHTML(p, row = false) {
+function cardMeta(p) {
+  try { const m = PAGES[p.slug] && PAGES[p.slug](p).meta; if (m && m.length) return m.slice(0, 2).map(([a, b]) => `<div><span>${a}</span><b>${b}</b></div>`).join(''); } catch (e) { /* fall back to skills */ }
+  return '';
+}
+function cardHTML(p, row = false, idx = 0) {
   const thumb = esc(p.thumb || PROJECT_THUMBS[p.slug] || DEFAULT_PROJECT_THUMB);
+  if (!row) {
+    const meta = cardMeta(p);
+    return `<button type="button" data-slug="${esc(p.slug)}" class="card-ed fade">
+      <img src="${thumb}" width="1200" height="900" alt="${esc(p.title)} preview" loading="lazy" decoding="async">
+      <span class="card-body"><span class="card-no">${String(idx + 1).padStart(2, '0')}</span><span class="eyebrow-s">${esc(p.category)}</span><span class="card-period">${esc(p.period || '')}</span><span class="card-title">${esc(p.title)}</span><span class="card-sum">${esc(p.summary)}</span>${meta ? `<span class="card-meta">${meta}</span>` : `<span class="card-skills">${(p.skills || []).slice(0, 4).map(esc).join(' &middot; ')}</span>`}<span class="card-more">View project <i data-icon="arrow-right"></i></span></span>
+    </button>`;
+  }
   return `<button type="button" data-slug="${esc(p.slug)}" class="card-ed ${row ? 'card-row' : ''} fade">
       <img src="${thumb}" width="1200" height="900" alt="${esc(p.title)} preview" loading="lazy" decoding="async">
       <span class="card-body"><span class="eyebrow-s">${esc(p.category)}</span><span class="card-period">${esc(p.period || '')}</span><span class="card-title">${esc(p.title)}</span><span class="card-sum">${esc(p.summary)}</span><span class="card-skills">${(p.skills || []).slice(0, 4).map(esc).join(' &middot; ')}</span><span class="card-more">View project <i data-icon="arrow-right"></i></span></span>
     </button>`;
 }
 function fillGrid(box, list, row = false) {
-  box.innerHTML = list.map((p) => cardHTML(p, row)).join('');
+  box.innerHTML = list.map((p, i) => cardHTML(p, row, i)).join('');
   box.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => openProject(PROJECTS.find((p) => p.slug === b.dataset.slug))));
   observeFades();
 }
@@ -3294,7 +3350,7 @@ function renderAll() {
   const list = byRecent.filter((p) => cat === 'All' || p.category === cat);
   $('#aEmpty').classList.toggle('hidden', list.length > 0);
   $('#liveCount').textContent = list.length + ' project' + (list.length === 1 ? '' : 's') + ' shown';
-  fillGrid($('#aGrid'), list, true);
+  fillGrid($('#aGrid'), list, false);
 }
 
 // ===== project modal =====
@@ -3484,10 +3540,10 @@ function ensureModelViewer() {
 function closeProject() {
   if (location.hash.startsWith('#project=') && history.state?.portfolioRoute) { history.back(); return; }
   transitionPage(() => {
-  hideOverlay($('#pOverlay')); $('#pDialog').innerHTML = '';
+  hideOverlay($('#pOverlay')); setProjectModalBackground(false); $('#pDialog').innerHTML = '';
   const backToAll = previousView === 'all'; $('#allView').hidden = !backToAll; $('#home').hidden = backToAll;
   if (backToAll) renderAll(); setHash(backToAll ? '#all-projects' : '', true);
-  if (lastFocus && lastFocus.isConnected) lastFocus.focus(); window.scrollTo(0, 0);
+  restoreProjectFocus(); window.scrollTo(0, 0);
   });
 }
 $('#pOverlay').addEventListener('keydown', (e) => trap(e, $('#pDialog')));
@@ -3511,7 +3567,19 @@ function renderEvidence(view) {
   });
 }
 document.querySelectorAll('[data-evidence-view]').forEach((button) => button.addEventListener('click', () => renderEvidence(button.dataset.evidenceView)));
-$('#evidenceProjectLink').addEventListener('click', () => openProject(physicsProject));
+$('#evidenceProjectLink').addEventListener('click', (event) => { event.preventDefault(); openProject(physicsProject); });
+const evidenceExhibit = document.querySelector('.evidence-exhibit');
+evidenceExhibit.addEventListener('click', (event) => {
+  if (event.target.closest('[data-evidence-view], #evidenceProjectLink')) return;
+  evidenceExhibit.focus({ preventScroll: true });
+  openProject(physicsProject);
+});
+evidenceExhibit.addEventListener('keydown', (event) => {
+  if (event.target !== evidenceExhibit || (event.key !== 'Enter' && event.key !== ' ')) return;
+  event.preventDefault();
+  evidenceExhibit.focus({ preventScroll: true });
+  openProject(physicsProject);
+});
 
 // ===== timeline (education & experience, with leadership roles nested) and awards =====
 function renderTimeline() {
@@ -3548,9 +3616,10 @@ function observeFades() {
 const inAll = () => !$('#allView').hidden;
 const TITLE_HOME = 'Mechanical Engineering Portfolio | Dylan Chen';
 let lbFocus = null;
-function openLightbox(src, cap) { lbFocus = document.activeElement; $('#lbImg').src = src; $('#lbImg').alt = cap; $('#lbCap').textContent = cap; $('#lightbox').hidden = false; $('#lbClose').focus(); }
-function closeLightbox() { $('#lightbox').hidden = true; $('#lbImg').removeAttribute('src'); if (lbFocus && lbFocus.isConnected) lbFocus.focus(); }
+function openLightbox(src, cap) { lbFocus = document.activeElement; $('#lbImg').src = src; $('#lbImg').alt = cap; $('#lbCap').textContent = cap; $('#lightbox').hidden = false; $('#pOverlay').setAttribute('inert', ''); $('#lbClose').focus(); }
+function closeLightbox() { $('#lightbox').hidden = true; $('#lbImg').removeAttribute('src'); $('#pOverlay').removeAttribute('inert'); if (lbFocus && lbFocus.isConnected) lbFocus.focus({ preventScroll: true }); }
 $('#lightbox').addEventListener('click', (e) => { if (e.target.id === 'lightbox' || e.target.closest('#lbClose')) closeLightbox(); });
+$('#lightbox').addEventListener('keydown', (e) => trap(e, $('#lightbox')));
 $('#pDialog').addEventListener('click', (e) => { const z = e.target.closest('[data-zoom]'); if (z) openLightbox(z.dataset.zoom, z.dataset.cap); });
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape') return;
@@ -3559,11 +3628,16 @@ document.addEventListener('keydown', (e) => {
 function rememberReturnScroll() {
   try { history.replaceState({ ...(history.state || {}), portfolioReturnScrollY: window.scrollY }, '', location.href); } catch (e) {}
 }
+function restoreProjectFocus() {
+  const target = lastFocus && lastFocus.isConnected ? lastFocus : (inAll() ? $('#allTitle') : $('#projTitle'));
+  if (target) target.focus({ preventScroll: true });
+}
 function setView(all, anchor, rememberScroll = false) {
   if (all && rememberScroll) rememberReturnScroll();
   const changingPage = all !== inAll() || !$('#pOverlay').hidden;
   const apply = () => {
   hideOverlay($('#pOverlay'));
+  setProjectModalBackground(false);
   $('#allView').hidden = !all; $('#home').hidden = all;
   document.title = all ? 'All projects | Mechanical Engineering Portfolio' : TITLE_HOME;
   if (all) { renderAll(); window.scrollTo({ top: 0, behavior: 'instant' }); setHash('#all-projects'); return; }
@@ -3612,9 +3686,13 @@ function route(event) {
     if (restoreScrollY !== null) pageChange.then(() => requestAnimationFrame(() => window.scrollTo({ top: restoreScrollY, behavior: 'instant' })));
     return;
   }
+  const returningFromProject = !$('#pOverlay').hidden;
   cur = null; $('#pDialog').innerHTML = '';
   const pageChange = h === '#all-projects' ? setView(true) : setView(false, h || '');
-  if (restoreScrollY !== null) pageChange.then(() => requestAnimationFrame(() => window.scrollTo({ top: restoreScrollY, behavior: 'instant' })));
+  pageChange.then(() => requestAnimationFrame(() => {
+    if (restoreScrollY !== null) window.scrollTo({ top: restoreScrollY, behavior: 'instant' });
+    if (returningFromProject) restoreProjectFocus();
+  }));
 }
 window.addEventListener('hashchange', route);
 window.addEventListener('popstate', route);
